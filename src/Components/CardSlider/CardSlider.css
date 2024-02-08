@@ -1,0 +1,79 @@
+.carousel-slider {
+    /* left: 120px; */
+    /* top: calc(50vh - 195px); */
+    position: relative;
+    width: fit-content;
+    margin: 5px;
+}
+.carousel-slider-items {
+    /* padding: 5px; */
+    background-color: lightgray;
+    height: 390px;
+    /* width: 680px; */
+    width: 1070px;
+    overflow: hidden;
+}
+.prev-btn {
+    z-index: 15; 
+    position: absolute;
+    background-color: transparent; 
+    border: 0px; 
+    padding: 0px; 
+    top: calc(50% - 25px); 
+    left: 20px; 
+    opacity: 40%;
+}
+.prev-btn img {
+    height: 50px;
+}
+.prev-btn:hover {
+    opacity: 80%;
+}
+.next-btn {
+    z-index: 15; 
+    position: absolute;
+    background-color: transparent; 
+    border: 0px; 
+    padding: 0px; 
+    top: calc(50% - 25px); 
+    right: 20px; 
+    opacity: 40%;
+}
+.next-btn img {
+    height: 50px;
+}
+.next-btn:hover {
+    opacity: 80%;
+}
+.item-image-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.item-image {
+    /* background-color: yellow; */
+    transition: 0.5s transform linear;
+    height: 300px; 
+    width: 200px;
+    margin: 1px;
+    opacity: 70%;
+}
+.active {
+    opacity: 100%;
+}
+.active #image-background-bar {
+    transition: 0.5s all linear;
+    top: 40px !important;
+    height: 150px !important;
+}
+/* .active .pokemon img {
+    animation-name: image-zoom-in-out-animation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    transform: scale(1, 1);
+}
+@keyframes image-zoom-in-out-animation {
+    0% {transform: scale(1, 1) rotate(0deg);}
+    50% {transform: scale(1.3, 1.3);}
+    100% {transform: scale(1, 1);}
+} */
